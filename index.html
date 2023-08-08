@@ -50,16 +50,16 @@
             
             <!-- Nav Item - Charts -->
             <li class="nav-item">
-                <a class="nav-link" href="charts.html">
+                <a class="nav-link" href="#grafica">
                     <i class="fas fa-fw fa-chart-area"></i>
-                    <span>Charts</span></a>
+                    <span>Grafica</span></a>
             </li>
 
             <!-- Nav Item - Tables -->
             <li class="nav-item">
-                <a class="nav-link" href="tables.html">
+                <a class="nav-link" href="#tabla">
                     <i class="fas fa-fw fa-table"></i>
-                    <span>Tables</span></a>
+                    <span>Tabla</span></a>
             </li>
 
             <!-- Divider -->
@@ -381,6 +381,7 @@
 
                         <!-- Area Chart -->
                         <div class="col-xl-12 col-lg-12">
+                            <a name="grafica"></a>
                             <div class="card shadow mb-4">
                                 <!-- Card Header - Dropdown -->
                                 <div
@@ -421,27 +422,21 @@
                             <!-- DataTales Example -->
                     <div class="card shadow mb-4">
                         <div class="card-header py-3">
-                            <h6 class="m-0 font-weight-bold text-primary">DataTables Example</h6>
+                            <h6 class="m-0 font-weight-bold text-primary">Ingresos mensuales</h6>
                         </div>
                         <div class="card-body">
                             <div class="table-responsive">
+                                <a name="tabla"></a>
                                 <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
                                     <thead>
                                         <tr>
                                             <th>ID</th>
                                             <th>MES</th>
-                                            <th>INGRESO mensual</th>
+                                            <th>INGRESO MENSUAL USD</th>
                                         </tr>
                                     </thead>
-                                    <tfoot>
-                                        <tr>
-                                            <th>ID</th>
-                                            <th>MES</th>
-                                            <th>INGRESO mensual</th>
-                                        </tr>
-                                    </tfoot>
-                                    <tbody>
-
+                        
+                                    <tbody id="tbValores">
                                     </tbody>
                                 </table>
 
@@ -512,12 +507,16 @@
      <script src="vendor/chart.js/Chart.min.js"></script>
  
      <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+     <script src="vendor/datatables/jquery.dataTables.min.js"></script>
+    <script src="vendor/datatables/dataTables.bootstrap4.min.js"></script>
  
      <!-- Page level custom scripts -->
      <script src="js/demo/chart-area-demo.js"></script>
      <script src="js/demo/chart-pie-demo.js"></script>
      <script src="js/demo/chart-bar-demo.js"></script>
-  
+
+    <!-- Page level custom scripts -->
+    <script src="js/demo/datatables-demo.js"></script>
 </body>
 
 
